@@ -1,4 +1,4 @@
-prompt_job_description = """
+prompt_job_description = """You have to summarize the text given.
 
 """
 

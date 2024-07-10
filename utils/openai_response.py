@@ -2,7 +2,7 @@ from openai import OpenAI
 from config import openai_api_key
 
 # Define a function to get the response from OpenAI's GPT-3
-def get_openai_response(prompt,chat_history):
+def get_openai_response_chat(prompt,chat_history):
 
     client = OpenAI(api_key=openai_api_key)
     chat_history_str = ""
@@ -20,10 +20,17 @@ def get_openai_response(prompt,chat_history):
     
     return response.choices[0].message.content
 
-if __name__ == "__main__":
+def get_openai_response_summary(prompt,user):
 
-    prompt = "You are an AI assistant."
+    client = OpenAI(api_key=openai_api_key)
+    messages = [
+        {"role": "system", "content": prompt},
+        {"role": "user", "content": user}
+    ]
 
-    text = "what is your name ?"
+    response = client.chat.completions.create(
+    model="gpt-3.5-turbo-0125",
+    messages=messages)
+    
+    return response.choices[0].message.content
 
-    print(get_openai_response(prompt,text))
