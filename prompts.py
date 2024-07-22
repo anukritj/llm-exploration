@@ -251,3 +251,125 @@ The candidate should demonstrate strong problem-solving skills and a proactive a
 
 Overall, the candidate should have a keen understanding of market trends and customer needs, reflected through their ability to conduct usability studies and user research. This understanding should translate into the ability to develop and manage comprehensive product roadmaps, ensuring alignment with business targets and strategic goals.
 """
+
+sample_resume = """
+Anukrit Jain
++91 7303912185 | anukrit.jain@gmail.com | LinkedIn
+
+
+I am a results-driven product manager with 3+ years of experience, specialising in synthesizing insights from market and user research into strategic roadmaps. My approach involves thorough competitive analysis, robust solutioning with innovative products and attentive execution using cutting-edge technology & user-centric designs to evolve projects from concept to market. I've spearheaded product launches that drive significant user adoption & engagement and set benchmarks in technological innovation.
+
+PROFESSIONAL EXPERIENCE
+Byju’s Innovation Lab - Building personalised learning at Byju’s	Jan ’22 - Present
+
+Product Manager	                    Bengaluru, India
+Pioneered AI-driven product innovations from concept to market, directly addressing educational challenges.
+Led product strategy by conducting comprehensive market research and analyzing user feedback & competitors, to craft an AI-driven roadmap for personalized learning solutions.
+Collaborated closely with the design and engineering team to build AI/ML based personalised learning experiences, focused on addressing the shortage of high quality teachers, content and recommendation engines. 
+
+Key Results Achieved:
+Learning Outcomes: Enhanced feature activation by 5%, video engagement by 3x and question completion by 23%.
+User Satisfaction: Boosted positive user feedback by 14% through the integration of AI Doubt Solving feature.
+Cost efficiency: Slashed monthly expenses by ~INR 20L (73% decrease) on doubt solving platform by leveraging LLMs that increased successful search results from 69% to 94%, significantly decreasing live teacher chat sessions.
+Productivity: Enhanced SMEs' content creation and QA efficiency by 4x through AI assistance and content tracking portal.
+
+Key Product Innovations:
+
+Student-assisted tools:
+AI-Doubt Solving: Launched an AI solution using LLMs and in-house Math Solvers, achieving 91% accuracy and 98.9% effective query filtering for Safe AI — surpassing all other global models currently available for academic queries.
+Personalised Study Hour: Leveraged in-house knowledge tracing models & LLMs to launch an adaptive learning tool that recommends custom study materials and adjusts question difficulty to enhance learning outside the classroom (Press release).
+AI-Graded Mock Tests: Harnessed multi-agent LLM frameworks and linear progression models to create school-like exams, grade subjective answers and provide post-test feedback & recommendations to enhance exam preparation. 
+Math Practice Assistant: Enabled practice of subjective math questions with personalised support, facilitated the development of a Contrastive Loss model that achieved 92% accuracy in offering relevant hints and feedback for students.
+
+Teacher-assisted tools:
+TeacherGPT: Designed prompts and architecture for simulacra LLM agents that have the ability to be good teachers who can identify student’s strengths, weaknesses and behavioural traits to provide personalised recommendations.
+AI Worksheet corrector: Leveraging YOLOv5 and SymPy-based grading system for automated student worksheet evaluations, achieving 97% accuracy for arithmetic & linear equation worksheets and attracting substantial investor interest.
+Interactive Math Activities: Identified significant US market opportunities, spearheaded a cross-functional team of 21, and streamlined the creation of over 1,000 high-quality interactive in-class Math activities for the US market.
+
+J.P. Morgan - Global leader in financial services 	   Jan ’20 – Jun ‘20, Nov ’20 - Dec ‘21
+
+Investment Banking Junior Analyst II	                    Mumbai, India
+Collaborated with the North America Healthcare sector team, conducted in-depth industry analysis, financial modelling, and created profiles and pitch books for active and prospective clients.
+Worked on multiple billion-dollar transactions, ranging from M&A to capital markets in light of IPOs, SPACs and debt issuance across different sub-sectors including Biopharma, HCIT and MedTech.
+Created an advisory deck for clients to present a deep dive analysis on M&A opportunities in Telemedicine post COVID-19.
+
+Disney + Hotstar - Leading OTT platform 	   Aug ’20 - Oct ‘21
+
+Product Management Intern	                    Mumbai, India
+Improved adoption of self-serve platforms by conducting user research to get relevant insights, optimising landing pages to improve funnel conversion, creating and fixing data dashboards and re-designing UI.
+Optimised ad delivery, reducing refunds by 12% by fixing critical ad server bugs, impacting revenue during IPL 2020.
+
+Liminal VR and AR - Cutting-edge immersive AR/VR experiences provider 	   May ’19 - Dec ‘19
+
+Unity Developer Intern  	  Mumbai, India
+Drove the creation of ExploAR, an AR tool for improved business demos, from idea to launch with co-founders.
+Utilized Unity for efficient 3D model editing, dramatically cutting AR product demo preparation from days to minutes.
+
+Additional Internship Experience
+
+Android Developer Intern – Scholr
+May ’18 - Jul ‘18
+Back-end Developer Intern – SPTBI
+Feb ’18 - Apr ‘18
+
+PERSONAL PROJECT
+NextThreeBooks.com - Personalised Book Recommendations Website                                                                         Mar ‘23
+Developed using React & NextJs and leveraged LLMs to provide 3 tailored book recommendations with reasoning.
+Achieved 4,000 monthly visits and garnered over 10,000 backlinks organically, without any promotional spending.
+Featured in reputable newsletters like GSV Ventures, The Neuron, Futurepedia, and Future Tools.
+Realised a 42% conversion rate, demonstrating strong user engagement and purchase intent.
+
+EDUCATION
+	    
+Qualification
+Institute
+Board / University
+% / CGPA
+Year
+B.E. (IT)
+Sardar Patel Institute of Technology, Mumbai
+University of Mumbai
+9.01/10
+2020
+XII
+Pace Junior Science College, Mumbai
+Maharashtra State Board
+90%
+2016
+X
+Activity High School, Mumbai
+ICSE
+88%
+2014
+
+
+Publication
+“Augment it Yourself” - IJCA, Foundation of Computer Science, NY, USA (Research article)
+2020
+Certifications
+Suven Consultants & Tech. (Data Analytics using R and Statistics using Excel and Tableau)
+2018 – 19
+SPJIMR (Marketing Management, Financial Accounting, Economics and Business Environment)
+2017 – 19
+Patents
+“Systems & methods for error detection & correction of electrical signals”- India (201921026261)
+2019
+“Systems of signal transformation unit coupled with a smartphone using an android application”- India (201921026261)
+2019
+Positions Of Responsibility
+Co-curator at TEDxSPIT, Chairperson of Oculus, S.P.I.T. (Managed a team of 181 people and 26 events to lead the Annual Techno-Cultural festival), Marketing Head- Student Council, S.P.I.T.
+2017 – 19
+
+
+ACCOLADES
+
+India Innovation Challenge Design Contest (launched by Texas Instruments in association with DST and IIM B) – Top 30 National Finalists (over 3,500 participating teams), received product development funds of ₹ 5 Lacs
+2018 - 19
+Indian School of Business (ISB) National Business Competition – Awarded Runner-up (over 220 registrations)
+2019
+J.P. Morgan Chase & Co. Code for Good Hackathon – Awarded Runner-up (over 40 teams in final round)
+2019
+Finalist at Hackathons held by NEC, Rakuten and Sabre
+2019
+
+"""
