@@ -2,9 +2,9 @@ from openai import OpenAI
 from config import openai_api_key
 
 # Response from OpenAI's GPT-4
-def get_openai_response_chat(prompt,chat_history,job_requirements, resume):
+def get_openai_response_chat(prompt,chat_history,job_requirements, resume, key):
 
-    client = OpenAI(api_key=openai_api_key)
+    client = OpenAI(api_key=key)
     chat_history_str = ""
     for chat in chat_history:
         chat_history_str += chat['role'] + ":" + chat['content'] + "\n"
@@ -22,9 +22,9 @@ def get_openai_response_chat(prompt,chat_history,job_requirements, resume):
     
     return response.choices[0].message.content
 
-def get_openai_response_summary(prompt,user):
+def get_openai_response_summary(prompt,user, key):
 
-    client = OpenAI(api_key=openai_api_key)
+    client = OpenAI(api_key=key)
     messages = [
         {"role": "system", "content": prompt},
         {"role": "user", "content": user}

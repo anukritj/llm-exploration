@@ -8,6 +8,8 @@ with st.sidebar:
     system_prompt_summary = st.text_area("JD - System Prompt", value = prompt_job_description,key="jd_prompt")
     # system_prompt_questions = st.text_area("Questions - System Prompt", value = prompt_prepare_questions,key="question_prompt")
     # print(f"JD SYSTEM PROMPT: {system_prompt}")
+    openai_api_key = st.text_input("Open AI API Key",key="open_ai")
+    # anthropic_api_key = st.text_area("Anthropic API Key",key="anthropic")
    
 st.title("📝 Interview Prep")
 job_title = st.text_input("Job Title",value = "Product Manager", key="title")
@@ -78,7 +80,7 @@ if st.button("Submit"):
         user_prompt = f"Job Title: {job_title}\nJob Description: {job_description}\n Here is a competency framework for your reference: {competency}\n Some additional requirements by employer: {extra_info}"
 
     # print(f"USER PROMPT: {user_prompt}")
-    jd_summary = get_openai_response_summary(system_prompt_summary,user_prompt)
+    jd_summary = get_openai_response_summary(system_prompt_summary,user_prompt,openai_api_key)
     st.write("### Job Requirements")
     st.write(jd_summary)
 

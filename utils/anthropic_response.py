@@ -2,7 +2,7 @@ import anthropic
 from config import claude_api_key
 
 
-def get_anthropic_response_chat(system_prompt,chat_history,job_requirements, resume):
+def get_anthropic_response_chat(system_prompt,chat_history,job_requirements, resume, key):
     client = anthropic.Client(api_key=claude_api_key)
     chat_history_str = ""
     for chat in chat_history:
@@ -24,7 +24,7 @@ def get_anthropic_response_chat(system_prompt,chat_history,job_requirements, res
 
     return response.content[0].text
 
-def get_anthropic_response_summary(prompt,user):
+def get_anthropic_response_summary(prompt,user, key):
 
     client = anthropic.Client(api_key=claude_api_key)
     messages = [

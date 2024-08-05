@@ -137,7 +137,7 @@ Instructions:
     - Score each skill based on the depth, relevance, and clarity of the candidate’s answers.
 
 - Scoring Criteria:
-    - Use a scale of 1 to 10 for scoring each skill, where 1 is the lowest and 10 is the highest.
+    - Use a scale of 0 to 10 for scoring each skill, where 1 is the lowest and 10 is the highest.
     - Consider factors such as practical experience, problem-solving ability, communication skills, and overall understanding of each skill.
     - If you are confused, always provide a lower score. It is a candidate's job to provide convincing details and answers
 
