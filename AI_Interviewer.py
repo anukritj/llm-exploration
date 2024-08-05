@@ -1,7 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 from config import openai_api_key
-from prompts import prompt_ai_interviewer, sample_resume
+from prompts import prompt_ai_interviewer, sample_resume, prompt_interview_report
 from utils.openai_response import get_openai_response_chat
 from utils.anthropic_response import get_anthropic_response_chat
 from prompts import job_requirements_sample, prompt_interview_report
@@ -10,12 +10,14 @@ with st.sidebar:
     # st.text_area("AI Interviewer - System Prompt", value = prompt_ai_interviewer,key="chatbot_system_prompt")
     # st.text_area("Resume",key="resume")
     # st.text_area("Job Requirements",value = job_requirements_sample, key="requirements")
-    system_prompt = st.text_area("AI Interviewer - System Prompt", value = prompt_ai_interviewer,key="chatbot_system_prompt")
-    resume = st.text_area("Resume",key="resume", value=sample_resume)
-    requirements = st.text_area("Interview Prep",value = job_requirements_sample, key="requirements")
     model = st.selectbox(
     "Select a Model",
-    ("GPT-4o", "Claude"))
+    ("GPT-4o", "Claude 3.5 Sonnet"),index=1)
+    system_prompt = st.text_area("AI Interviewer Prompt", value = prompt_ai_interviewer,key="chatbot_system_prompt")
+    resume = st.text_area("Resume",key="resume", value=sample_resume)
+    requirements = st.text_area("Interview Prep",value = job_requirements_sample, key="requirements")
+    report_prompt = st.text_area("Report Prompt", value = prompt_interview_report,key="chatbot_report_prompt")
+    
     # questions = st.text_input("Interview Questions", value = 10, key = "questions")
 
 
@@ -45,9 +47,9 @@ if prompt := st.chat_input():
 
 if st.button("Generate Report"):
     if model=="GPT-4o":
-        msg = get_openai_response_chat(system_prompt,st.session_state.messages, requirements, resume)
+        report = get_openai_response_chat(report_prompt,st.session_state.messages, requirements, "Not required")
     else:
-        msg = get_anthropic_response_chat(system_prompt,st.session_state.messages, requirements, resume)
+        report = get_anthropic_response_chat(report_prompt,st.session_state.messages, requirements, "Not required")
     st.session_state.messages.append({"role": "assistant", "content": report})
     st.chat_message("assistant").write(report)
 

@@ -77,7 +77,7 @@ if st.button("Submit"):
     else:
         user_prompt = f"Job Title: {job_title}\nJob Description: {job_description}\n Here is a competency framework for your reference: {competency}\n Some additional requirements by employer: {extra_info}"
 
-    print(f"USER PROMPT: {user_prompt}")
+    # print(f"USER PROMPT: {user_prompt}")
     jd_summary = get_openai_response_summary(system_prompt_summary,user_prompt)
     st.write("### Job Requirements")
     st.write(jd_summary)

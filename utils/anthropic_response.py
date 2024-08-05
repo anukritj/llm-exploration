@@ -19,8 +19,10 @@ def get_anthropic_response_chat(system_prompt,chat_history,job_requirements, res
             {"role": "user", "content": user_prompt},
         ]
     )
+    print("CLAUDE 3.5 SONNET")
+    print(f"SYSTEM PROMPT: {system_prompt}")
 
-    response.choices[0].message.content
+    return response.content[0].text
 
 def get_anthropic_response_summary(prompt,user):
 
@@ -33,5 +35,6 @@ def get_anthropic_response_summary(prompt,user):
     response = client.chat.completions.create(
     model="claude-3-5-sonnet-20240620",
     messages=messages)
+    print("CLAUDE 3.5 SONNET")
     
-    return response.choices[0].message.content
+    return response.content[0].text

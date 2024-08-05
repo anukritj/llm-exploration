@@ -1,7 +1,7 @@
 from openai import OpenAI
 from config import openai_api_key
 
-# Define a function to get the response from OpenAI's GPT-3
+# Response from OpenAI's GPT-4
 def get_openai_response_chat(prompt,chat_history,job_requirements, resume):
 
     client = OpenAI(api_key=openai_api_key)
@@ -10,7 +10,7 @@ def get_openai_response_chat(prompt,chat_history,job_requirements, resume):
         chat_history_str += chat['role'] + ":" + chat['content'] + "\n"
 
     user=f"Here is the chat history: {chat_history_str}\nInterview Prep Notes: {job_requirements}\nCandidate resume: {resume}"
-    print(f"CHAT HISTORY: {chat_history_str}")
+    # print(f"CHAT HISTORY: {chat_history_str}")
     messages = [
         {"role": "system", "content": prompt},
         {"role": "user", "content": user}
