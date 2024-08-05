@@ -1,9 +1,9 @@
 import anthropic
-from config import claude_api_key
+# from config import claude_api_key
 
 
 def get_anthropic_response_chat(system_prompt,chat_history,job_requirements, resume, key):
-    client = anthropic.Client(api_key=claude_api_key)
+    client = anthropic.Client(api_key=key)
     chat_history_str = ""
     for chat in chat_history:
         chat_history_str += chat['role'] + ":" + chat['content'] + "\n"
@@ -20,13 +20,13 @@ def get_anthropic_response_chat(system_prompt,chat_history,job_requirements, res
         ]
     )
     print("CLAUDE 3.5 SONNET")
-    print(f"SYSTEM PROMPT: {system_prompt}")
+    # print(f"SYSTEM PROMPT: {system_prompt}")
 
     return response.content[0].text
 
 def get_anthropic_response_summary(prompt,user, key):
 
-    client = anthropic.Client(api_key=claude_api_key)
+    client = anthropic.Client(api_key=key)
     messages = [
         {"role": "system", "content": prompt},
         {"role": "user", "content": user}

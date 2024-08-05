@@ -1,5 +1,5 @@
 from openai import OpenAI
-from config import openai_api_key
+# from config import openai_api_key
 
 # Response from OpenAI's GPT-4
 def get_openai_response_chat(prompt,chat_history,job_requirements, resume, key):

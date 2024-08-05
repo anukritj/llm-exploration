@@ -1,6 +1,6 @@
 import streamlit as st
 from openai import OpenAI
-from config import openai_api_key
+# from config import openai_api_key
 from prompts import prompt_job_description, prompt_prepare_questions
 from utils.openai_response import get_openai_response_summary
 

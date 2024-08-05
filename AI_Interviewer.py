@@ -1,6 +1,6 @@
 from openai import OpenAI
 import streamlit as st
-from config import openai_api_key
+# from config import openai_api_key
 from prompts import prompt_ai_interviewer, sample_resume, prompt_interview_report
 from utils.openai_response import get_openai_response_chat
 from utils.anthropic_response import get_anthropic_response_chat
