@@ -17,7 +17,7 @@ with st.sidebar:
     ("GPT-4o", "Claude 3.5 Sonnet"),index=1)
     system_prompt = st.text_area("AI Interviewer Prompt", value = prompt_ai_interviewer,key="chatbot_system_prompt")
     resume = st.text_area("Resume",key="resume", value=sample_resume)
-    requirements = st.text_area("Interview Prep",value = job_requirements_sample, key="requirements")
+    requirements = st.text_area("Job Requirements (from JD Extractor)",value = job_requirements_sample, key="requirements")
     report_prompt = st.text_area("Report Prompt", value = prompt_interview_report,key="chatbot_report_prompt")
     
     # questions = st.text_input("Interview Questions", value = 10, key = "questions")
